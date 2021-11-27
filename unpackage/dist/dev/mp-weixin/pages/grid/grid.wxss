@@ -1,0 +1,155 @@
+
+page {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	box-sizing: border-box;
+	background-color: #fff;
+	min-height: 100%;
+	height: auto;
+}
+view {
+	font-size: 14px;
+	line-height: inherit;
+}
+.content {
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+}
+.content-title {
+	width: 650rpx;
+	height: 180rpx;
+	margin: 0 50rpx 20rpx 50rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.content-title-left {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+
+	line-height: 70rpx;
+}
+.content-title-left text:nth-child(1) {
+	color: #d4cbca;
+	font-size: 30rpx;
+}
+.content-title-left text:nth-child(2) {
+	color: #FFFFFF;
+	font-size: 50rpx;
+	font-weight: bold;
+}
+.content-title-right {
+	width: 100rpx;
+	height: 100rpx;
+	margin-top: 50rpx;
+}
+.content-title-right image {
+	width: 100%;
+	height: 100%;
+	border-radius: 50rpx;
+}
+.banner-image {
+	width: 650rpx;
+	height: 400rpx;
+	margin: 0 50rpx 0 50rpx;
+	border-radius: 40rpx;
+}
+.swiper-box {
+	height: 400rpx;
+}
+scroll-view ::-webkit-scrollbar {
+	display: none;
+}
+.scroll-view {
+	height: 1100rpx;
+}
+.content-list {
+	width: 650rpx;
+	border-radius: 30rpx;
+	margin: 40rpx 50rpx 0 50rpx;
+	background:-webkit-linear-gradient(#a7a7a7,#fffce2);
+	background:linear-gradient(#a7a7a7,#fffce2)
+}
+.content-list-item {
+	margin: 30rpx 30rpx 30rpx 30rpx;
+}
+.item-image {
+	width: 590rpx;
+	height: 520rpx;
+}
+.item-image image {
+	width: 100%;
+	height: 100%;
+	border-radius: 40rpx;
+}
+.item-text {
+	margin-top: 30rpx;
+}
+.item-text-title {
+	font-size: 30rpx;
+	font-weight: bold;
+	margin: 0 30rpx 30rpx 20rpx;
+}
+.item-text-content {
+	color: #7f7f7f;
+	font-size: 20rpx;
+	margin: 0 30rpx 40rpx 30rpx;
+	line-height: 40rpx;
+	overflow: hidden;
+	word-break: break-all;  /* break-all(允许在单词内换行。) */
+	text-overflow: ellipsis;  /* 超出部分省略号 */
+	display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+	-webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+	-webkit-line-clamp: 3; /** 显示的行数 **/
+}
+.item-comment {
+	margin: 0 30rpx 10rpx 30rpx;
+}
+.comment-title {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.comment-content {
+	margin-top: 20rpx;
+	background-color: #e5e5e5;
+	border-radius: 20rpx;
+	height: 60rpx;
+}
+.comment-content swiper {
+	height: 50rpx;
+}
+.comment-content swiper-item {
+	margin:10rpx 0rpx 0 20rpx;
+}
+

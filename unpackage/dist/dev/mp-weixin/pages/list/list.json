@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "xingqiu-tag": "/components/xingqiu-tag/xingqiu-tag"
+  }
+}

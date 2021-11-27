@@ -1,0 +1,68 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": "doc.state || auth.uid == doc.user_id || 'AUDITOR' in auth.role",
+		"create": "auth.uid != null",
+		"update": "'AUDITOR' in auth.role",
+		"delete": "auth.uid == doc.user_id"
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成",
+			"permission": {
+				"write": false
+			}
+		},
+		"text": {
+			"bsonType": "string",
+			"permission": {
+				"write": true
+			}
+		},
+		"user_id": {
+			"forceDefaultValue": {
+				"$env": "uid"
+			},
+			"foreignKey": "uni-id-users._id",
+			"permission": {
+				"write": true
+			}
+		},
+		"ip": {
+			"forceDefaultValue": {
+				"$env": "clientIP"
+			},
+			"permission": {
+				"write": true
+			}
+		},
+		"create_time": {
+			"bsonType":"string",
+			"permission": {
+				"write": true
+			}
+		},
+		"state": {
+			"bsonType": "bool",
+			"forceDefaultValue": false,
+			"permission": {
+				"write": true
+			}
+		},
+		"topic_id":{
+			"bsonType":"string",
+			"permission": {
+				"write": true
+			}
+		},
+		"like":{
+			"bsonType":"int",
+			"forceDefaultValue": 0,
+			"permission":{
+				"write":"true"
+			}
+		}
+	}
+}

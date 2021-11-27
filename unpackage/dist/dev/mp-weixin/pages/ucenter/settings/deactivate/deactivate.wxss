@@ -1,0 +1,55 @@
+
+.content{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	font-size: 28rpx;
+}
+.words{
+	padding: 0 26rpx;
+	line-height:46rpx;
+	margin-top:20rpx;
+	margin-bottom: 80px;
+}
+.button-group{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	position: fixed;
+	height: 50px;
+	bottom: 10px;
+	width: 750rpx;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	border-top: solid 1px #e4e6ec;
+	padding-top: 10px;
+	background-color: #FFFFFF;
+}
+.button-group button{
+	border-radius: 100px;
+	border: none;
+	width: 300rpx;
+	height: 42px;
+	line-height: 42px;
+	font-size: 32rpx;
+}
+.button-group button:after{
+	border: none;
+}
+.button-group button.next{
+	color: #e64340;
+	border:solid 1px #e64340 ;
+}
+

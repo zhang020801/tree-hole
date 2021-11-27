@@ -1,0 +1,60 @@
+<template>
+	<view class="pages" >
+		<view class="fixbg" :style="{ 'background-image' : 'url(' + imageURL + ')' }">
+			<xingqiu-tag></xingqiu-tag>
+			<view class="content-bottom" @tap="handleToSubmit()">
+				<view class="content-bottom-button">
+					<button type="default" size="mini">点击倾诉</button>
+				</view>
+				
+			</view>
+		</view>
+		
+		</unicloud-db>
+	</view>
+</template>
+
+<script>
+	import xingqiuTag from '../../components/xingqiu-tag/xingqiu-tag.vue';
+	export default {
+		components: {
+			xingqiuTag
+		},
+		computed: {
+			
+		},
+		onLoad() {
+			
+		},
+		data() {
+			return {
+				imageURL: "../../static/background.gif"
+			}
+		},
+		methods: {
+			handleToSubmit(){
+				uni.navigateTo({
+					url:"../../pages/list/submit/submit"
+				})
+			},
+		}
+	}
+</script>
+
+<style scoped>
+	.content-bottom {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+	.content-bottom-button {
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+	.content-bottom-button button {
+		color: #FFFFFF;
+		background-color: transparent;
+	}
+</style>

@@ -1,0 +1,41 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "个人倾诉列表",
+          "pathName": "pages/list/pour_out_list/pour_out_list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "话题详情页",
+          "pathName": "pages/ucenter/guestbook/guestbook",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我的",
+          "pathName": "pages/ucenter/ucenter",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "注册账号",
+          "pathName": "pages/ucenter/login-page/register/register",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

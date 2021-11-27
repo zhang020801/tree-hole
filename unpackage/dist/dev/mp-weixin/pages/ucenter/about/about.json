@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "关于",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#151515",
+  "usingComponents": {
+    "sansnn-u-q-r-code": "/components/Sansnn-uQRCode/Sansnn-uQRCode"
+  }
+}

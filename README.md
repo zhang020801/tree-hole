@@ -1,7 +1,10 @@
+## 项目介绍
+该项目基于uniapp开发的一款倾诉APP，采用uniCloud云开发搭建，....
+
 
 ## 目录结构@catalogue
 <pre>
-uni-starter
+tree-hole
 ├─uniCloud-aliyun	
 │	├─cloudfunctions 云函数目录
 │	|	├─common 公共模块
@@ -14,28 +17,20 @@ uni-starter
 │	|	├─uni-analyse-searchhot		云端一体搜索模板依赖的云函数 <a target="_blank" href="https://ext.dcloud.net.cn/plugin?id=3851">详情</a>
 │	|	└─uni-id-cf				用户中心云函数，实现用户注册、修改密码、发送验证码、快捷登录（微信、短信、账户、一键登录）
 │	└──database						云数据目录
-│		├─db_init.json				db_init.json初始化数据库文件，其中不再包含schema <a target="_blank" href="https://uniapp.dcloud.net.cn/uniCloud/hellodb?id=db-init">详情</a>
-│		├─opendb-app-versions.schema.json		应用版本，表结构文件
-│		├─opendb-banner.schema.json	        	横幅数据表，表结构文件
-│		├─opendb-feedback.schema.json	        意见反馈表，表结构文件
-│		├─opendb-news-articles.schema.json	    新闻文章表，表结构文件
-│		├─opendb-news-categories.schema.json	新闻分类表，表结构文件
-│		├─opendb-news-comments.schema.json		新闻评论表，表结构文件
-│		├─opendb-news-favorite.schema.json		新闻收藏表，表结构文件
-│		├─opendb-search-hot.schema.json			热门搜索表，表结构文件
-│		├─opendb-search-log.schema.json			搜索记录表，表结构文件
-│		├─opendb-verify-codes.schema.json		验证码表，表结构文件
-│		├─uni-id-log.schema.json	        	登录日志表，表结构文件
-│		├─uni-id-scores.schema.json	        	用户积分表，表结构文件
-│		└─uni-id-users.schema.json	        	用户表，表结构文件
 ├─pages										业务页面文件存放的目录
 │	├─common						
 │	│	└─webview							webview目录
 │	│		└─webview.vue					webview页面	用于实现跨端的web页面浏览
 │	├─grid
-│	│	└─grid.vue	 						带宫格和banner的示例页面
+│	│	└─grid.vue	 					  话题讨论页面
 │	├─list
-│	│	├─list.vue	 						新闻列表
+| | |—news_detail
+| | | └─news_detail.vue     倾诉详情页
+| | |—pour_out_list
+| | | └─pour_out_list.vue   我的倾诉列表页
+| | |—submit
+| | | └─submit.vue   我的倾诉列表页
+│	│	├─list.vue              首页
 │	│	├─search
 │	│	│	└─search						云端一体搜索插件
 │	│	└─detail.vue						新闻详情
@@ -54,8 +49,6 @@ uni-starter
 │	│	│	└─register						注册账户模块
 │	│	│		├─validator.js
 │	│	│		└─register.vue
-│	│	├─read-news-log						新闻阅读记录
-│	│	│	└─read-news-log
 │	│	├─settings						
 │	│	│	├─dc-push
 │	│	│	│	└─push.js					push权限操作SDK

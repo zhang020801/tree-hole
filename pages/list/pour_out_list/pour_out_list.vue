@@ -5,7 +5,7 @@
 		<view class="content">
 			<view class="content-list">
 				<scroll-view scroll-y="true" class="scroll-view">
-					<view class="content-list-item" v-for="(item,index) in newsList" :key="index">
+					<view class="content-list-item" v-for="(item,index) in newsList" :key="index" v-bind:id = "index" @tap='handleToDetail'>
 						<view class="item-title">
 							{{item.time}}
 						</view>
@@ -62,7 +62,14 @@
 				.then(res => {
 					this.newsList = res.result.data
 				})		
-			}			
+			},
+			// 跳转到倾诉详情
+			handleToDetail(e){
+				// console.log(e)
+				uni.navigateTo({
+					url:'../../ucenter/mynewsdetail/mynewsdetail?id=' + this.newsList[e.currentTarget.id]._id
+				})
+			}
 		}
 	}
 </script>

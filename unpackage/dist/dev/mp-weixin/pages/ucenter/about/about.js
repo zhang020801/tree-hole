@@ -96,7 +96,7 @@ var components
 try {
   components = {
     SansnnUQRCode: function() {
-      return Promise.all(/*! import() | components/Sansnn-uQRCode/Sansnn-uQRCode */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/Sansnn-uQRCode/Sansnn-uQRCode")]).then(__webpack_require__.bind(null, /*! @/components/Sansnn-uQRCode/Sansnn-uQRCode.vue */ 353))
+      return Promise.all(/*! import() | components/Sansnn-uQRCode/Sansnn-uQRCode */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/Sansnn-uQRCode/Sansnn-uQRCode")]).then(__webpack_require__.bind(null, /*! @/components/Sansnn-uQRCode/Sansnn-uQRCode.vue */ 360))
     }
   }
 } catch (e) {

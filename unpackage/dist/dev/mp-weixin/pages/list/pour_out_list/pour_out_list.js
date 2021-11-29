@@ -153,7 +153,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uniCloud) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var backhead = function backhead() {__webpack_require__.e(/*! require.ensure | components/backhead/backhead */ "components/backhead/backhead").then((function () {return resolve(__webpack_require__(/*! ../../../components/backhead/backhead.vue */ 256));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uniCloud, uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var backhead = function backhead() {__webpack_require__.e(/*! require.ensure | components/backhead/backhead */ "components/backhead/backhead").then((function () {return resolve(__webpack_require__(/*! ../../../components/backhead/backhead.vue */ 256));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -217,8 +217,15 @@ __webpack_require__.r(__webpack_exports__);
       then(function (res) {
         _this.newsList = res.result.data;
       });
+    },
+    // 跳转到倾诉详情
+    handleToDetail: function handleToDetail(e) {
+      // console.log(e)
+      uni.navigateTo({
+        url: '../../ucenter/mynewsdetail/mynewsdetail?id=' + this.newsList[e.currentTarget.id]._id });
+
     } } };exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/uni-cloud/dist/index.js */ 9)["default"]))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/uni-cloud/dist/index.js */ 9)["default"], __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 

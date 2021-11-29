@@ -25,7 +25,8 @@
     "pages/ucenter/guestbook/guestbook",
     "pages/list/news_detail/news_detail",
     "pages/list/submit/submit",
-    "pages/list/pour_out_list/pour_out_list"
+    "pages/list/pour_out_list/pour_out_list",
+    "pages/ucenter/mynewsdetail/mynewsdetail"
   ],
   "subPackages": [],
   "window": {
@@ -67,6 +68,5 @@
       "desc": "演示在onShow生命周期获取地理位置"
     }
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap.json"
+  "usingComponents": {}
 }

@@ -51,6 +51,11 @@ APPID可在微信开发者工具中申请获得，申请后填入以下区域：
 
 注册账号时，确保自己的HBuilderX的账号通过实名注册。
 
+## 开发者联系方式
+
+如搭建过程中或调试过程中遇到任何困难，可添加开发者微信，获取解决方法。
+
+<img src="README_img/img01.PNG" style="zoom:25%;" />
 
 ## 目录结构
 <pre>
@@ -128,8 +133,5 @@ tree-hole
 ├─manifest.json	 					配置应用名称、appid、logo、版本等打包信息
 └─pages.json						配置页面路由、导航条、选项卡等页面类信息
 
-## 开发者联系方式
 
-如搭建过程中或调试过程中遇到任何困难，可添加开发者微信，获取解决方法。
 
-<img src="README_img/img01.PNG" style="zoom:25%;" />

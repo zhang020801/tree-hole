@@ -2,8 +2,8 @@
 	<view class="fixbg" v-if="imageURL && imageURL!=''" :style="{ 'background-image' : 'url(' + imageURL + ')' }">
 		<view class="about">
 			<view class="box">
-				<image class="logoImg" :src="about.logo"></image>
-				<text class="tip appName">软件名</text>
+				<image class="logoImg" src="../../../static/logo.jpg"></image>
+				<text class="tip appName">Tell倾诉</text>
 				<text class="tip">Version {{version}}</text>
 				<!--Sansnn-uQRCode组件来源，插件市场：https://ext.dcloud.net.cn/plugin?id=1287 微调后-->
 				<Sansnn-uQRCode text="https://static-cf480923-80f4-426f-9ec9-610ab148567a.bspapp.com/" :makeOnLoad="true" class="qrcode"></Sansnn-uQRCode>
@@ -14,8 +14,8 @@
 					<text class="agreement" @click="navigateTo(agreement)">《{{agreement.title}}》</text>
 					<text class="hint" v-if="about.agreements.length-1>index">{{$t('about.and')}}</text>
 				</view>
-				<text class="hint">Copyright © {{year}}</text>
-				<text class="hint">{{about.company}}</text>
+				<text class="hint">Tell倾诉 © {{year}}</text>
+				<text class="hint">第五小组开发项目组</text>
 			</view>
 		</view>
 	</view>

@@ -96,16 +96,16 @@ var components
 try {
   components = {
     uniForms: function() {
-      return Promise.all(/*! import() | uni_modules/uni-forms/components/uni-forms/uni-forms */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-forms/components/uni-forms/uni-forms")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-forms/components/uni-forms/uni-forms.vue */ 407))
+      return Promise.all(/*! import() | uni_modules/uni-forms/components/uni-forms/uni-forms */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-forms/components/uni-forms/uni-forms")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-forms/components/uni-forms/uni-forms.vue */ 415))
     },
     uniEasyinput: function() {
-      return __webpack_require__.e(/*! import() | uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput */ "uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput.vue */ 346))
+      return __webpack_require__.e(/*! import() | uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput */ "uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput.vue */ 354))
     },
     uniSendSmsCode: function() {
-      return __webpack_require__.e(/*! import() | components/uni-send-sms-code/uni-send-sms-code */ "components/uni-send-sms-code/uni-send-sms-code").then(__webpack_require__.bind(null, /*! @/components/uni-send-sms-code/uni-send-sms-code.vue */ 353))
+      return __webpack_require__.e(/*! import() | components/uni-send-sms-code/uni-send-sms-code */ "components/uni-send-sms-code/uni-send-sms-code").then(__webpack_require__.bind(null, /*! @/components/uni-send-sms-code/uni-send-sms-code.vue */ 361))
     },
     uniQuickLogin: function() {
-      return Promise.all(/*! import() | components/uni-quick-login/uni-quick-login */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/uni-quick-login/uni-quick-login")]).then(__webpack_require__.bind(null, /*! @/components/uni-quick-login/uni-quick-login.vue */ 300))
+      return Promise.all(/*! import() | components/uni-quick-login/uni-quick-login */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/uni-quick-login/uni-quick-login")]).then(__webpack_require__.bind(null, /*! @/components/uni-quick-login/uni-quick-login.vue */ 308))
     }
   }
 } catch (e) {

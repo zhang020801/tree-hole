@@ -1,4 +1,5 @@
 ## 项目介绍
+
 该项目基于uniapp开发的一款倾诉APP，采用uniCloud云开发搭建，支持微信小程序端，打造专属考研人的倾诉领域。
 
 ## 项目依赖
@@ -53,6 +54,7 @@ APPID可在微信开发者工具中申请获得，申请后填入以下区域：
 
 
 ## 目录结构
+
 <pre>
 tree-hole
 ├─uniCloud-aliyun	
@@ -127,6 +129,7 @@ tree-hole
 ├─uni-starter.config				uni-starter的前端的配置文件，项目所有模块的配置在这里填写。详见该文件的代码注释。
 ├─manifest.json	 					配置应用名称、appid、logo、版本等打包信息
 └─pages.json						配置页面路由、导航条、选项卡等页面类信息
+
 
 ## 开发者联系方式
 

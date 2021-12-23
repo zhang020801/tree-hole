@@ -96,7 +96,7 @@ var components
 try {
   components = {
     uniQuickLogin: function() {
-      return Promise.all(/*! import() | components/uni-quick-login/uni-quick-login */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/uni-quick-login/uni-quick-login")]).then(__webpack_require__.bind(null, /*! @/components/uni-quick-login/uni-quick-login.vue */ 300))
+      return Promise.all(/*! import() | components/uni-quick-login/uni-quick-login */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/uni-quick-login/uni-quick-login")]).then(__webpack_require__.bind(null, /*! @/components/uni-quick-login/uni-quick-login.vue */ 308))
     }
   }
 } catch (e) {

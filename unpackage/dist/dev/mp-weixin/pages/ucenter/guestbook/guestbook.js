@@ -96,19 +96,19 @@ var components
 try {
   components = {
     backhead: function() {
-      return __webpack_require__.e(/*! import() | components/backhead/backhead */ "components/backhead/backhead").then(__webpack_require__.bind(null, /*! @/components/backhead/backhead.vue */ 256))
+      return __webpack_require__.e(/*! import() | components/backhead/backhead */ "components/backhead/backhead").then(__webpack_require__.bind(null, /*! @/components/backhead/backhead.vue */ 255))
     },
     unicloudDb: function() {
-      return Promise.all(/*! import() | node-modules/@dcloudio/uni-cli-shared/components/unicloud-db */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/@dcloudio/uni-cli-shared/components/unicloud-db")]).then(__webpack_require__.bind(null, /*! @dcloudio/uni-cli-shared/components/unicloud-db.vue */ 268))
+      return Promise.all(/*! import() | node-modules/@dcloudio/uni-cli-shared/components/unicloud-db */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/@dcloudio/uni-cli-shared/components/unicloud-db")]).then(__webpack_require__.bind(null, /*! @dcloudio/uni-cli-shared/components/unicloud-db.vue */ 276))
     },
     cloudImage: function() {
-      return __webpack_require__.e(/*! import() | components/cloud-image/cloud-image */ "components/cloud-image/cloud-image").then(__webpack_require__.bind(null, /*! @/components/cloud-image/cloud-image.vue */ 263))
+      return __webpack_require__.e(/*! import() | components/cloud-image/cloud-image */ "components/cloud-image/cloud-image").then(__webpack_require__.bind(null, /*! @/components/cloud-image/cloud-image.vue */ 271))
     },
     uniIcons: function() {
-      return Promise.all(/*! import() | uni_modules/uni-icons/components/uni-icons/uni-icons */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-icons/components/uni-icons/uni-icons")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-icons/components/uni-icons/uni-icons.vue */ 318))
+      return Promise.all(/*! import() | uni_modules/uni-icons/components/uni-icons/uni-icons */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-icons/components/uni-icons/uni-icons")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-icons/components/uni-icons/uni-icons.vue */ 326))
     },
     uniLoadState: function() {
-      return Promise.all(/*! import() | components/uni-load-state/uni-load-state */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/uni-load-state/uni-load-state")]).then(__webpack_require__.bind(null, /*! @/components/uni-load-state/uni-load-state.vue */ 422))
+      return Promise.all(/*! import() | components/uni-load-state/uni-load-state */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/uni-load-state/uni-load-state")]).then(__webpack_require__.bind(null, /*! @/components/uni-load-state/uni-load-state.vue */ 430))
     }
   }
 } catch (e) {
@@ -375,7 +375,7 @@ var _vuex = __webpack_require__(/*! vuex */ 18);function _interopRequireDefault(
 //
 //
 //
-var db = uniCloud.database();var guestbookTable = db.collection('guestbook');var topicContent = db.collection('topic-list');var backhead = function backhead() {__webpack_require__.e(/*! require.ensure | components/backhead/backhead */ "components/backhead/backhead").then((function () {return resolve(__webpack_require__(/*! ../../../components/backhead/backhead.vue */ 256));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { computed: _objectSpread(_objectSpread({}, (0, _vuex.mapGetters)({ userInfo: 'user/info', hasLogin: 'user/hasLogin' })), {}, { udbWhere: function udbWhere() {if (this.hasLogin) {if (this.uniIDHasRole('AUDITOR')) {return '';} else {while (this.topic_id) {return 'topic_id=="' + this.topic_id + '"' + ' && (state==true || user_id._id==$cloudEnv_uid)';}}}} }), data: function data() {return { imageURL: "../../../static/background.gif", title: "话题详情页", text: "", topic_id: "", nowTime: "", topicContent: {} };}, components: { backhead: backhead }, onLoad: function onLoad(e) {// 接受话题列表页出过来的_id值
+var db = uniCloud.database();var guestbookTable = db.collection('guestbook');var topicContent = db.collection('topic-list');var backhead = function backhead() {__webpack_require__.e(/*! require.ensure | components/backhead/backhead */ "components/backhead/backhead").then((function () {return resolve(__webpack_require__(/*! ../../../components/backhead/backhead.vue */ 255));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { computed: _objectSpread(_objectSpread({}, (0, _vuex.mapGetters)({ userInfo: 'user/info', hasLogin: 'user/hasLogin' })), {}, { udbWhere: function udbWhere() {if (this.hasLogin) {if (this.uniIDHasRole('AUDITOR')) {return '';} else {while (this.topic_id) {return 'topic_id=="' + this.topic_id + '"' + ' && (state==true || user_id._id==$cloudEnv_uid)';}}}} }), data: function data() {return { imageURL: "../../../static/background.gif", title: "话题详情页", text: "", topic_id: "", nowTime: "", topicContent: {} };}, components: { backhead: backhead }, onLoad: function onLoad(e) {// 接受话题列表页出过来的_id值
     this.topic_id = e.id;this.getTopicContent();uni.setNavigationBarTitle({ title: this.$t('guestbook.navigationBarTitle') });}, onReady: function onReady() {}, methods: _objectSpread(_objectSpread({ // 获取话题内容
     getTopicContent: function getTopicContent() {var _this = this;var res = topicContent.where({ _id: this.topic_id }).get().then(function (res) {_this.topicContent = res.result.data[0];_this.title = _this.topicContent.title;});}, deleteItem: function deleteItem(id) {this.$refs.udb.remove(id, { complete: function complete(e) {console.log(e);} });}, send: function send() {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return _this2.getNowTime();case 2:return _context.abrupt("return", new Promise(function (resolve, reject) {var data = { text: _this2.text, user_id: _this2.userInfo._id, create_time: _this2.nowTime, state: false,
                     topic_id: _this2.topic_id,

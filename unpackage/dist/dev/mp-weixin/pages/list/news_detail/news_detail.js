@@ -96,7 +96,7 @@ var components
 try {
   components = {
     backhead: function() {
-      return __webpack_require__.e(/*! import() | components/backhead/backhead */ "components/backhead/backhead").then(__webpack_require__.bind(null, /*! @/components/backhead/backhead.vue */ 256))
+      return __webpack_require__.e(/*! import() | components/backhead/backhead */ "components/backhead/backhead").then(__webpack_require__.bind(null, /*! @/components/backhead/backhead.vue */ 255))
     }
   }
 } catch (e) {
@@ -169,7 +169,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uniCloud) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var backhead = function backhead() {__webpack_require__.e(/*! require.ensure | components/backhead/backhead */ "components/backhead/backhead").then((function () {return resolve(__webpack_require__(/*! ../../../components/backhead/backhead.vue */ 256));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uniCloud) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var backhead = function backhead() {__webpack_require__.e(/*! require.ensure | components/backhead/backhead */ "components/backhead/backhead").then((function () {return resolve(__webpack_require__(/*! ../../../components/backhead/backhead.vue */ 255));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 

@@ -1,6 +1,6 @@
 <template>
 	<view class="fixbg" :style="{ 'background-image' : 'url(' + imageURL + ')' }">
-		<backhead :icon="true" color="black" :title="title"></backhead>
+		<backhead :icon="true" color="white" :title="title"></backhead>
 
 		<view class="content">
 			<view class="content-list">
@@ -37,7 +37,7 @@
 		data() {
 			return {
 				title: "我的倾诉记录",
-				imageURL: '../../../static/background02.jpg',
+				imageURL: '../../../static/background03.jpg',
 				userInfo: {},
 				newsList: []
 			}

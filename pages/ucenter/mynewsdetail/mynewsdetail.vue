@@ -55,7 +55,7 @@
 		data() {
 			return {
 				title: "倾诉详情",
-				imageURL: '../../../static/background02.jpg',
+				imageURL: '../../../static/background03.jpg',
 				id:'',
 				newsDetail:[],
 				userInfo:{}

@@ -96,7 +96,7 @@ var components
 try {
   components = {
     uniAgreements: function() {
-      return __webpack_require__.e(/*! import() | components/uni-agreements/uni-agreements */ "components/uni-agreements/uni-agreements").then(__webpack_require__.bind(null, /*! @/components/uni-agreements/uni-agreements.vue */ 400))
+      return __webpack_require__.e(/*! import() | components/uni-agreements/uni-agreements */ "components/uni-agreements/uni-agreements").then(__webpack_require__.bind(null, /*! @/components/uni-agreements/uni-agreements.vue */ 408))
     }
   }
 } catch (e) {

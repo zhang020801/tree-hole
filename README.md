@@ -138,11 +138,4 @@ tree-hole
 <<<<<<< HEAD
 
 ## 开发者联系方式
-=======
->>>>>>> e8c240b9aada9dd4b7aff3f726b88dc4508e46f0
-
-
-<<<<<<< HEAD
 <img src="README_img/img01.PNG" style="zoom:25%;" />
-=======
->>>>>>> e8c240b9aada9dd4b7aff3f726b88dc4508e46f0

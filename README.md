@@ -135,7 +135,3 @@ tree-hole
 ├─manifest.json	 					配置应用名称、appid、logo、版本等打包信息
 └─pages.json						配置页面路由、导航条、选项卡等页面类信息
 
-<<<<<<< HEAD
-
-## 开发者联系方式
-<img src="README_img/img01.PNG" style="zoom:25%;" />
